@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> LED 전광판 </title>
+    </head>
+
+    <body>
+        <h1> LED 전광판</h1>
+        <h2>Text입력</h2>
+        <textarea name="text입력" id="" cols="30" rows="10">text입력</textarea>
+    </body>
+</html>
+
+<!-- 댓글은 백엔드 기술이 필요 db의 활용까지 필요, 스팸차단 
+    이미지 업로드와 같은 여러 기능 사용시 어려움 남들이 만든 댓글을 이용 해도 됨 DICUSS를 사용, 얘는 웹 서버를 이용하여 열어야함.-->
+
+
+<P>
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://led-jeongwangpan.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</P>

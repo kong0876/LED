@@ -2,8 +2,17 @@ h1{
     border-bottom: 5px solid black;
 }
 
+#text{
+    border-right: 2px solid gray;
+}
 #grid{
-    border: 1px solid gray;
+    border: 2px solid gray;
     display:grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+@media(max-width:800px){
+    #grid{
+        display:block;
+    }
+    
 }
